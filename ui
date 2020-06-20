@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>UI-kit</title>
+  <link href="https://nomail.com.ua/files/eot/b8cdbe60b4b6c8679d8b64b15ac1697f.eot?#iefix format('embedded-opentype')" ,>
+  <link href="url('https://nomail.com.ua/files/woff/b8cdbe60b4b6c8679d8b64b15ac1697f.woff') format('woff')" , <link href="url('https://nomail.com.ua/files/woff2/b8cdbe60b4b6c8679d8b64b15ac1697f.woff2') format('woff2')" ;>
+  <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+</head>
+<style>
+  body {
+    font-family: 'HeliosLight';
+  }
+
+  h1 {
+    font-size: 50px;
+    font-family: 'Prata', serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 68px;
+    margin-block-end: 0px;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-family: 'Prata', serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 38px;
+    margin-top: 0px;
+  }
+
+  h3 {
+    font-size: 28px;
+    line-height: 38px;
+    font-family: 'Prata', serif;
+    color: #FFFFFF;
+  }
+
+  p {
+
+    font-size: 20px;
+    font-family: 'HeliosLight';
+  }
+
+  textarea {
+    font-size: 14px;
+  }
+
+  .container {
+    margin: 80px 60px;
+  }
+
+  #circle {
+    width: 50px;
+    display: inline-block;
+    height: 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+  }
+
+  .black-circle {
+    background: #2A2829;
+    margin-left: 50px;
+  }
+  .gray-circle {
+    background: #DBDBDB;
+    margin-left: 50px;
+  }
+  .white-circle {
+    background: #F3F1F2;
+    margin-right: 50px;
+    float: right;
+    border-color: black;
+    border: 2px;
+  }
+  .left-circle-text {
+  display: inline;
+  float: left;
+  margin-left: 40px;
+  }
+
+  .yellow-circle {
+    background: #FFD438;
+    float: right;
+    margin-right: 50px;
+  }
+  .right-circle-text {
+    display: inline;
+    float: right;
+    margin-right: 40px;
+  }
+
+  button {
+    display: inline-block;
+    height: 43px;
+    width: 192px;
+    font-family: 'HeliosLight';
+    font-size: 16px;
+    line-height: 19px;
+    padding: 5px 15px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    vertical-align: top;
+  }
+
+  .mainbtn {
+    background: #FFD438;
+    border-color: #FFD438;
+    color: black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: all 1s;
+    position: relative;
+  }
+
+  .textbtn {
+    border: none;
+    background: none;
+    color: black;
+    font-family: 'HeliosLight';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 14px;
+    text-align: center;
+  }
+
+  .secondbtn {
+    background: #ECECEC;
+    border-color: #FFD438;
+    color: black;
+    transition: all 1s;
+    border: 1px solid #E3E3E3;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.13);
+    border-radius: 10px;
+  }
+
+  .mainbtnsmall {
+    background: #FFD438;
+    border-color: #FFD438;
+    width: 60px;
+    margin-left: 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.13);
+  }
+
+  .secondbtnsmall {
+    background: #ECECEC;
+    border-color: #FFD438;
+    width: 60px;
+    margin-left: 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.13);
+  }
+
+  .otziv-form {
+    width: 250px;
+    background: #2A2829;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .otziv-form-header {}
+
+  .otziv-form-body {}
+
+  .otziv-form-footer {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .close {
+    border: none;
+    background: none;
+    color: grey;
+    font-family: 'HeliosLight';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 14px;
+    padding-left: 15px;
+    padding-right: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 80px;
+    float: right;
+    margin-top: -15px;
+    margin-right: -5px;
+  }
+
+  #otzivtext {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background: #E6E6E6;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .column {
+    width: 30%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    margin-right: 20px;
+    margin-top: 40px;
+    vertical-align: top;
+  }
+
+  .row {
+    margin-bottom: 20px;
+  }
+
+  .otziv-header {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .otziv-star {
+    width: 100%;
+  }
+
+  .icons {
+    width: 100%;
+  }
+
+  #comment-form {
+    width: 303px;
+    height: 403px;
+  }
+</style>
+
+<body>
+  <div class="container">
+    <h1>Potion app</h1>
+    <h1>UI-kit</h1>
+    <div>
+      <div class="column">
+        <div class="row">
+          <button class="mainbtn" name="button">Button</button>
+          <button class="mainbtnsmall" name="button"></button>
+        </div>
+        <div class="row">
+          <button class="secondbtn" name="button">Button</button>
+          <button class="secondbtnsmall" name="button"></button>
+        </div>
+        <div class="row">
+          <button class="textbtn" name="button">Button</button>
+        </div>
+        <form class="otziv-form" action="" method="post">
+          <button class="close" name="button">Закрыть</button>
+          <h3 class="otziv-header">Оставить отзыв</h3>
+          <img class="otziv-star" src="Group 26.png" alt="">
+          <textarea id="otzivtext" placeholder="Напишите ваш комментарий..."></textarea>
+          <div class="otziv-form-footer">
+            <button class="mainbtn" name="button" type="submit">
+              Отправить
+            </button>
+          </div>
+
+      </div>
+      <div class="column">
+        <div class="row">
+          <div id="circle" class="black-circle"></div>
+          <div id="circle" class="yellow-circle"></div>
+        </div>
+        <div class="row">
+          <div id="circle" class="gray-circle"></div>
+          <div id="circle" class="white-circle"></div>
+        </div>
+      </div>
+      <div class="column">
+        <img class="icons" src="group 27.png" alt="">
+      </div>
+  </div>
+
+</body>
+
+</html>
